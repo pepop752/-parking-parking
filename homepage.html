@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPark </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;700&family=Reem+Kufi+Fun:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- css template -->
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/header.css">
+
+
+
+      
+</head>
+<body>
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/parking_logo3.png" alt="Logo" width="50" height="50" class="d-inline-block me-2" />
+            NEXTGEN PARKING
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="homepage.html">Home</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="featuresDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features
+                </a>
+                <ul class="dropdown-menu features-dropdown" aria-labelledby="featuresDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-map-marker-alt"></i> Find Parking
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-calendar-check"></i> Reserve Spot
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="payment.html">
+                      <i class="fas fa-wallet"></i> Easy Payment
+                    </a>
+                  </li>
+                </ul>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="choose_us.html">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about us">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="questions.html">FAQ </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sign">Sign In </a>
+              </li>
+              <!-- User Icon -->
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="profile2.html" title="User Profile" aria-label="User Profile">
+                  <i class="fas fa-user-circle user-icon"></i>
+                </a>
+              </li>
+    
+              <!-- <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white ms-3 px-4" href="#book">Book Now</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- Hero Section -->
+     <section class="hero-bg vh-100 d-flex align-items-center hero-section" id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="bg-dark bg-opacity-50 p-5 rounded-3">
+                        <h1 class="display-4 fw-bold text-white mb-4">Smart Parking Solutions for Modern Cities</h1>
+                        <p class="lead text-white mb-5">Find, Reserve & Pay for Parking Spots Instantly</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                            <a class=" btn btn-primary text-white btn-lg px-4 gap-3" href="#book">Book Now</a>
+                            <!-- <button class="btn btn-primary btn-lg px-4 gap-3">Book Now</button> -->
+                            <button class="btn btn-link play " data-bs-toggle="modal" data-bs-target="#videoModal">
+                                <i class="fas fa-play-circle me-2 play"></i>
+                                <span class="play ">See how it works</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title " id="videoModalLabel">How it works</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- ratio instead of width and height -->
+                        <div class="ratio ratio-16x9">
+                            <!-- <video controls  > -->
+                            <iframe src="ai video" title="see how it work" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5  ">
+        <!-- i remove shadow-lg from this and in all pages unless how it works -->
+    <div class="position-relative  p-4 rounded-lg  w-100">
+        <div class="container content ">
+            <h2 class="text-center mb-5">Why Choose SmartPark?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                           <i class="fas fa-car fa-3x text-primary mb-3"></i>
+                            <h3 class="h5">Real-Time Availability</h3>
+                            <p class="text-muted">See available parking spots in real-time with our smart sensors and live updates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                            <h4 class="h5">Instant Reservations</h4>
+                            <p class="text-muted">Reserve your parking spot in advance and guarantee your space when you arrive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-wallet fa-3x text-primary mb-3"></i>
+                            <h3 class="h5">Contactless Payment</h3>
+                            <p class="text-muted">Pay securely through our app with multiple payment options available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-5 ">
+        <div class="container position-relative  p-4 rounded-lg shadow-lg w-100">
+            <h2 class="text-center mb-5">How It Works</h2>
+            <div class="row g-4 bg-light">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="bg-dark text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <h3 class="m-0">1</h3>
+                        </div>
+                        <h3 class="h5  content">Find Parking</h3>
+                    <p class="text-muted p-3">Search for available parking spots near your destination using our interactive map.</p>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="bg-dark text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <h3 class="m-0">2</h3>
+                        </div>
+                        <h3 class="h5  content">Reserve Spot</h3>
+                    <p class="text-muted p-3">Select your preferred spot and reserve it with just a few taps.</p>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="bg-dark text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <h3 class="m-0">3</h3>
+                        </div>
+                        <h3 class="h5  content ">Park & Pay</h3>
+                        <p class="text-muted p-3">Arrive at your reserved spot and pay automatically through our secure system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container position-relative  p-4 rounded-lg  w-100 content">
+            <h2 class="text-center mb-5">What Our Customers Say</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="row g-0 bg-dark text-white head">
+                            <div class="col-md-4">
+                                <img src="images/user.jpg" class="img-fluid  dashed-circle" alt="James Johnson" >
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">James Johnson</h5>
+                                    <p class="card-text text-white-50">Small Business Owner</p>
+                                    <p class="card-text mt-3">"SmartPark has saved me so much time finding parking downtown. The reservation system works perfectly every time!"</p>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="row g-0 bg-dark text-white head ">
+                            <div class="col-md-4  ">
+                                <!-- <img src="images/cust2.jpeg" class="img-fluid rounded-start h-100 object-cover" alt="Michael Chen"> -->
+                                <img src="images/cust2.jpeg" class="img-fluid dashed-circle" alt="Michael Chen">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Michael Chen</h5>
+                                    <p class="card-text text-white-50">Daily Commuter</p>
+                                    <p class="card-text mt-3">"I used to circle blocks for 20 minutes looking for parking. Now I reserve my spot before I leave home. Game changer!"</p>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4  align-items-center justify-content-center mb-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="row g-0 bg-dark text-white head">
+                                <div class="col-md-4">
+                                    <img src="images/hero.jpg" class="img-fluid  dashed-circle" alt="albert" >
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Albert John</h5>
+                                        <p class="card-text text-white-50 ">  Business manager </p>
+                                        <p class="card-text mt-3">"SmartPark  is very convenient. It helps me to find a spot and save valuable time. I really like how simple and efficient it is !!"</p>
+                                        <div class="text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Map -->
+  <div class="bg-light py-5" id="map">
+    <div class="container position-relative  p-4 rounded-lg shadow-lg w-100  "   >
+        <h2 class="text-center mb-5  ">Find Us on the Map </h2>
+        <div class="ratio ratio-16x9 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215373510324!2d-73.987844924164!3d40.7484409713896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689876543210" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0 d-flex align-items-center">
+                    <img src="images/parking_logo6.png" alt="Company Logo" width="70" height="70" class="mb-3 mr-3">
+                    <p class="small">Empowering cities to manage parking and provide the best parking experience for drivers, merchants and solution providers.</p>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="homepage.html" class="text-white-50">Home</a></li>
+                        <li><a href="payment.html" class="text-white-50"> Pricing</a></li>
+                        <li><a href="choose_us.html" class="text-white-50">Why Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="questions.html" class="text-white-50">Help Center</a></li>
+                        <li><a href="#map" class="text-white-50">Map</a></li>
+                        <li><a href="#" class="text-white-50">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Connect With Us</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="small mb-0">&copy; 2025 SmartPark. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chat-bot"  id="chatbot">
+        <button class="btn btn-primary rounded-circle p-3" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h6 class="mb-0"><i class="fas fa-robot me-2"></i>SmartPark Assistant</h6>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Type your message..." id="userInput">
+                <button class="btn btn-primary" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+     
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bot.js"></script>
+    
+</body>
+</html>
